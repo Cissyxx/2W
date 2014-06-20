@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+-<RelativeLayout tools:context=".MainActivity" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:orientation="vertical" android:background="@style/AppTheme" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="@string/dcc" android:id="@+id/dccTextView"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/weekdays" android:id="@+id/weekdaysTextView" android:layout_below="@+id/hoursTextView" android:layout_alignLeft="@+id/hoursTextView"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/dccweekdayhours" android:id="@+id/weekdaysHoursTextView" android:layout_centerHorizontal="true" android:layout_alignBottom="@+id/weekdaysTextView" android:layout_alignBaseline="@+id/weekdaysTextView"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/weedkends" android:id="@+id/weekendsTextView" android:layout_below="@+id/weekdaysTextView" android:layout_alignLeft="@+id/weekdaysTextView"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/dccweekendshours" android:id="@+id/weekendsHoursTextView" android:layout_alignBottom="@+id/weekendsTextView" android:layout_alignBaseline="@+id/weekendsTextView" android:layout_alignRight="@+id/weekdaysHoursTextView"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/location" android:id="@+id/locationTextView" android:layout_below="@+id/weekendsTextView" android:layout_alignLeft="@+id/weekendsTextView" android:clickable="false" android:layout_marginTop="18dp"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/rpiaddress" android:id="@+id/rpiAddressTextView" android:layout_below="@+id/locationTextView" android:layout_alignLeft="@+id/locationTextView"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/googlemap" android:id="@+id/googleMapTextView" android:layout_below="@+id/rpiAddressTextView" android:layout_alignLeft="@+id/rpiAddressTextView"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/organizations" android:id="@+id/organizationsTextView" android:layout_alignLeft="@+id/googleMapTextView" android:layout_centerVertical="true"/>
+
+<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/CCPD" android:id="@+id/ccpdButton" android:layout_below="@+id/organizationsTextView" android:layout_alignParentLeft="true"/>
+
+<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/jazzman" android:id="@+id/jasmineButton" android:layout_below="@+id/ccpdButton" android:layout_alignLeft="@+id/ccpdButton" android:layout_alignRight="@+id/ccpdButton"/>
+
+<TextView android:paddingTop="10dp" android:layout_height="wrap_content" android:layout_width="76dp" android:text="@string/hours" android:id="@+id/hoursTextView" android:layout_below="@+id/dccTextView" android:layout_alignLeft="@+id/dccTextView"/>
+
+</RelativeLayout>
