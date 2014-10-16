@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cissy.rpiwhenwhere.Search_page"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" >
+
+        <TextView
+            android:id="@+id/search_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/search_bar3"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="none"
+            android:text="@string/s"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/abc_dropdownitem_icon_width" >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/search_bar"
+            android:layout_marginTop="16dp"
+            android:background="@layout/layout_bg"
+            android:ems="10"
+            android:hint="@string/type_hint"
+            android:inputType="textCapWords"
+            android:textSize="@dimen/search_height" />
+
+        <Button
+            android:id="@+id/textButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/searchEditText"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/searchEditText"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/button"
+            android:text="@string/s"
+            android:textSize="@dimen/button_height"
+            android:onClick="searchData" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button"
+            android:text="@string/s" />
+
+        <Button
+            android:id="@+id/catalogButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button"
+            android:text="@string/c"
+            android:onClick="switchToCatalogPage" />
+
+        <TextView
+            android:id="@+id/hourTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/searchEditText"
+            android:layout_marginTop="51dp"
+            android:ems="12"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/hourTextView"
+            android:layout_marginTop="17dp"
+            android:ems="12"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/orgTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/locationTextView"
+            android:layout_marginTop="17dp"
+            android:ems="12"
+            android:textColor="#FFF" />
+
+    </RelativeLayout>
+
+</FrameLayout>

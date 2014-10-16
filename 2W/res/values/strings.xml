@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">2W</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">When &amp; Where</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">RPI</string>
+    <string name="name">When &amp; Where</string>
+    <string name="type_hint">Enter a location in RPI</string>
+    <string name="s">Search</string>
+    <string name="c">Catalog</string>
+    <string name="title_activity_search_page">Search</string>
+    <string name="title_activity_catalog_page">Catalog</string>
+    <string name="building">Buildings</string>
+    <string name="facility">Organizations</string>
+    <string name="title_activity_buildings">Buildings</string>
+    <string name="title_activity_organizations">Organizations</string>
 
 </resources>

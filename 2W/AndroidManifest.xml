@@ -1,26 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="rcos.freedom.android.two_w"
+    package="com.cissy.rpiwhenwhere"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="19" />
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/when_and_where"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="rcos.freedom.android.two_w.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchPage"
+            android:label="@string/title_activity_search_page"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cissy.rpiwhenwhere.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CatalogPage"
+            android:label="@string/title_activity_catalog_page"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cissy.rpiwhenwhere.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Buildings"
+            android:label="@string/title_activity_buildings"
+            android:parentActivityName=".CatalogPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cissy.rpiwhenwhere.CatalogPage" />
+        </activity>
+        <activity
+            android:name=".Organizations"
+            android:label="@string/title_activity_organizations"
+            android:parentActivityName=".CatalogPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cissy.rpiwhenwhere.CatalogPage" />
         </activity>
     </application>
 

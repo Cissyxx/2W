@@ -1,12 +1,86 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${packageName}.${activityClass}" >
+    tools:context="com.example.whenwhererpi.MainActivity"
+    tools:ignore="MergeRootFrame" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" >
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/textButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/search_filed"
+            android:layout_alignTop="@+id/search_filed"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/search_filed"
+            android:background="@drawable/button"
+            android:text="@string/s" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button"
+            android:onClick="switchToSearchPage"
+            android:text="@string/s" />
+
+        <Button
+            android:id="@+id/catalogButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button"
+            android:onClick="switchToCatalogPage"
+            android:text="@string/c" />
+
+        <TextView
+            android:id="@+id/welcome_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/search_filed"
+            android:layout_alignParentLeft="false"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="52dp"
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/abc_dropdownitem_icon_width" />
+
+        <EditText
+            android:id="@+id/search_filed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:background="@layout/layout_bg"
+            android:ems="10"
+            android:hint="@string/type_hint"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:id="@+id/welcome_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textButton"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/abc_dropdownitem_icon_width" />
+
+    </RelativeLayout>
+
+</LinearLayout>

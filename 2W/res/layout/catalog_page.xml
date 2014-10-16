@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.whenwhererpi.Catalog_page"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" >
+
+        <TextView
+            android:id="@+id/searchEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/search_bar3"
+            android:clickable="false"
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/c"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/abc_dropdownitem_icon_width" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button"
+            android:onClick="switchToSearchPage"
+            android:text="@string/s" />
+
+        <Button
+            android:id="@+id/catalogButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button"
+            android:text="@string/c" />
+
+        <TextView
+            android:id="@+id/buildingsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/searchEditText"
+            android:layout_marginTop="21dp"
+            android:clickable="true"
+            android:ems="10"
+            android:onClick="switchToBuilding"
+            android:text="@string/building"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/catalog_height" />
+
+        <TextView
+            android:id="@+id/organizationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/buildingsTextView"
+            android:layout_marginTop="21dp"
+            android:clickable="true"
+            android:ems="10"
+            android:onClick="switchToOrganization"
+            android:text="@string/facility"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/catalog_height" />
+
+    </RelativeLayout>
+
+</FrameLayout>
